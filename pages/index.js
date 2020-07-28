@@ -1,4 +1,6 @@
 import "../styles.css";
+import acme from "../assets/acme.png";
+import logos from "../assets/logo-strip-desktop-v1.png";
 
 const NavItem = (props) => (
   <li>
@@ -40,7 +42,7 @@ export default () => (
         </ul>
       </div>
     </nav>
-    <div className="text-center md:text-left md:flex max-w-3xl mx-auto mt-12 md:mt-24 space-x-3">
+    <div className="text-center md:text-left md:flex max-w-3xl mx-auto mt-12 mb-12 md:mt-24 space-x-3">
       <h1 className="font-bold text-6xl leading-tight">All-in-one workspace</h1>
       <div className="space-y-3">
         <p className="text-xl font-normal">
@@ -68,6 +70,23 @@ export default () => (
           For teams & individuals - web, mobile, Mac, Windows.
         </p>
       </div>
+    </div>
+
+    <div className="bg-orange-100 flex justify-center px-32 pt-4 pb-8">
+      <div className="max-w-screen-mg">
+        <div className="flex justify-center pt-4 pb-8">
+          <ul className="flex space-x-2">
+            <NavItem href="/team-wiki" text="Team wiki" />
+            <NavItem href="/projects" text="Projects & tasks" />
+            <NavItem href="/notes" text="Notes & docs" />
+          </ul>
+        </div>
+        <img className="object-contain shadow" src={acme} alt="Acme Inc" />
+      </div>
+    </div>
+
+    <div className="m-16">
+      <img src={logos} alt="Logos" />
     </div>
   </div>
 );
