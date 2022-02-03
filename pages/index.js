@@ -64,7 +64,7 @@ export default () => (
             placeholder="Enter your email..."
             className="bg-white rounded border border-gray-300 px-4 py-2"
           />
-          <Button type="submit">Get started</Button>
+          <Button type="submit">Sign up</Button>
         </form>
         <p className="text-gray-500 text-sm">
           For teams & individuals - web, mobile, Mac, Windows.
@@ -76,9 +76,9 @@ export default () => (
       <div className="max-w-screen-mg">
         <div className="flex justify-center pt-4 pb-8">
           <ul className="flex space-x-2">
-            <NavItem href="/team-wiki" text="Team wiki" />
-            <NavItem href="/projects" text="Projects & tasks" />
-            <NavItem href="/notes" text="Notes & docs" />
+            <NavItem href="/team-wiki" text="📘 Team wiki" />
+            <NavItem href="/projects" text="🎒 Projects & tasks" />
+            <NavItem href="/notes" text="✍️ Notes & docs" />
           </ul>
         </div>
         <img className="object-contain shadow" src={acme} alt="Acme Inc" />
